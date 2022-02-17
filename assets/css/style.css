@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+.hero-heading{
+  font-family: 'Samarkan', cursive;
+  src : url('../vendor/boxicons/fonts/Samarkan.TTF');
+}
 a {
   color: #063970;
 }
