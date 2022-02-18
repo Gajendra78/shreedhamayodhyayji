@@ -8,6 +8,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+
+
 .hero-heading{
   font-family: 'Samarkan', cursive;
   src : url('../vendor/boxicons/fonts/Samarkan.TTF');
@@ -481,7 +483,8 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background-color: #f8fbfd;
+  background: radial-gradient(circle, rgba(169, 206, 241, 0.877) 0%, rgba(176, 216, 215, 0.844) 51%, rgba(180, 208, 252, 0.866) 100%);
+
   min-height: 40px;
 }
 
@@ -1138,7 +1141,33 @@ section {
     margin-bottom: 110px;
   }
 }
-
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients .clients-wrap {
+  border-top: 1px solid #f1eeed;
+  border-left: 1px solid #f1eeed;
+}
+.clients .client-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f1eeed;
+  border-bottom: 1px solid #f1eeed;
+  overflow: hidden;
+  background: #fff;
+  height: 100px;
+}
+.clients .client-logo img {
+  transition: all 0.3s ease-in-out;
+  height: 36px;
+  filter: grayscale(100%);
+}
+.clients .client-logo:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
