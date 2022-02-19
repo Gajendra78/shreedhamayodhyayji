@@ -647,7 +647,7 @@ section {
   height: 250px;
   position: relative;
   background: #faf9f8;
-  border-radius: 2%;
+  border-radius: %;
 }
 .services .icon {
   position: absolute;
