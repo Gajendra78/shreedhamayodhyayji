@@ -9,7 +9,7 @@ body {
   background: url(../img/bg2.jpg);
   background-repeat: repeat;
 
- }
+}
 
 
 .hero-heading {
@@ -35,19 +35,44 @@ h6 {
   font-family: "Raleway", sans-serif;
   color: #063970;
 }
-.ubutton{
+
+.ubutton {
   background-color: #063970;
   border-radius: 2rem;
   padding: 0.5rem;
 }
-.ubutton .button{
+
+.ubutton .button {
   color: white;
   padding: 0.8rem;
 }
-.ubutton:hover{
+
+.ubutton:hover {
   background-color: #04264b;
   border-radius: 2rem;
 }
+
+.glassmorphism {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5% 1% rgba(0, 0, 0, .3);
+  position: fixed;
+  backdrop-filter: blur(10px);
+
+}
+
+.glassmorphism::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, .5);
+  margin: -4px
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -728,103 +753,67 @@ section {
   line-height: 24px;
   font-size: 14px;
 }
+
 .features {
   padding-top: 0;
 }
+
 .features .nav-tabs {
   border: 0;
 }
+
 .features .nav-link {
   border: 0;
   padding: 25px 20px;
   transition: 0.3s;
   color: #2b2320;
 }
+
 .features .nav-link:hover {
   color: #02162c;
 }
+
 .features .nav-link h4 {
   font-size: 18px;
   font-weight: 600;
 }
+
 .features .nav-link p {
   font-size: 14px;
   margin-bottom: 0;
 }
+
 .features .nav-link.active {
   box-shadow: 0px 0 15px rgba(0, 0, 0, 0.12);
 }
+
 .features .tab-pane.active {
   -webkit-animation: slide-down 0.5s ease-out;
   animation: slide-down 0.5s ease-out;
 }
+
 @-webkit-keyframes slide-down {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes slide-down {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
-.counts {
-  padding-bottom: 30px;
-}
 
-.counts .count-box {
-  padding: 30px;
-  width: 100%;
-}
-
-.counts .count-box i {
-  display: block;
-  font-size: 44px;
-  color: #063970;
-  float: left;
-}
-
-.counts .count-box span {
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  color: #063970;
-  margin-left: 60px;
-}
-
-.counts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #063970;
-}
-
-.counts .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #063970;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  transition: ease-in-out 0.3s;
-}
-
-.counts .count-box a:hover {
-  color: #6e9fb4;
-}
 
 /*--------------------------------------------------------------
 # Cta
@@ -904,12 +893,13 @@ section {
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 0;
+  left: 0px;
+  right: 0px;
+  height: 14rem;
+  bottom: 10px;
+  top: 0px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
   padding: 15px;
 }
 
@@ -917,11 +907,11 @@ section {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
-  color: #2b2320;
+  color: #000000;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #65534c;
+  color: #000000;
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -929,10 +919,9 @@ section {
 .portfolio .portfolio-item .portfolio-info .preview-link,
 .portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #483b36;
+  right: 20px;
+  font-size: 15px;
+  color: #04264b;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
@@ -1162,46 +1151,44 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team
+# TDestination
 --------------------------------------------------------------*/
-.team .member {
+.team .destination {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
   position: relative;
 }
 
-.team .member .pic {
+.team .destination .pic {
   overflow: hidden;
 }
 
-.team .member .member-info {
+.team .destination .pic .destinationpic{
+ height: 200px;
+ width: 100%;
+}
+
+.team .destination .destination-info {
   position: absolute;
   top: 85%;
-  left: 20px;
-  right: 20px;
-  background: #fff;
-  padding: 20px 0;
-  color: #2f4d5a;
+  padding: 20px;
+  color: #042242;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  max-height: 95px;
+  max-height: none;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
 
-.team .member:hover .member-info {
-  max-height: 300px;
-}
-
-.team .member h4 {
+.team .destination h4 {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #2f4d5a;
+  color: #042242;
   position: relative;
   padding-bottom: 10px;
 }
 
-.team .member h4::after {
+.team .destination h4::after {
   content: '';
   position: absolute;
   display: block;
@@ -1212,32 +1199,14 @@ section {
   left: calc(50% - 25px);
 }
 
-.team .member span {
+.team .destination span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-.team .member .social {
-  margin-top: 15px;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #52869d;
-}
-
-.team .member .social a:hover {
-  color: #67b0d1;
-}
-
-.team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
-}
-
 @media (max-width: 992px) {
-  .team .member {
+  .team .destination {
     margin-bottom: 110px;
   }
 }
