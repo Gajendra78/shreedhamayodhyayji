@@ -66,8 +66,8 @@ h6 {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
+  right: 5px;
+  bottom: 5px;
   left: 0;
   box-shadow: inset 0 0 100px rgba(255, 255, 255, .5);
   margin: -4px
@@ -905,10 +905,10 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
+  font-size: 36px;
   color: #fff;
   font-weight: 600;
-  color: #000000;
+  color: #061144;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
@@ -1215,12 +1215,12 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .clients-wrap {
+.clients .clients-wrap  {
   border-top: 1px solid #f1eeed;
   border-left: 1px solid #f1eeed;
 }
 
-.clients .client-logo {
+.clients .client-logo ,.client-name{
   padding: 20px;
   display: flex;
   justify-content: center;
